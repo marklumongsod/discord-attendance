@@ -22,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/register', [DiscordController::class, 'register']);
 Route::post('/time-log', [DiscordController::class, 'timeLog']);
+Route::get('/geofences', [DiscordController::class, 'getGeofences']);
